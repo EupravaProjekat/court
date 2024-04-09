@@ -1,0 +1,109 @@
+<mxfile host="app.diagrams.net" modified="2024-04-09T21:18:28.762Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36 OPR/107.0.0.0" etag="lAKRgay9OFhxC7wMrkz9" version="24.2.3" type="device">
+  <diagram name="Page-1" id="_ik0LwTYJOawS-Y8hJFs">
+    <mxGraphModel dx="769" dy="829" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ShJbGS6pdwwudR1frPxR-1" value="" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;" vertex="1" parent="1">
+          <mxGeometry x="320" y="680" width="170" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="ShJbGS6pdwwudR1frPxR-5" value="&lt;div style=&quot;&quot;&gt;&amp;nbsp;int ComplaintID&lt;/div&gt;&lt;div style=&quot;&quot;&gt;string DescriptionOfOffense&lt;/div&gt;&lt;div style=&quot;&quot;&gt;string InformationAboutAccussed&lt;/div&gt;&lt;div style=&quot;&quot;&gt;Person Accused&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="590" y="565" width="170" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="ShJbGS6pdwwudR1frPxR-6" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="565" width="170" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="ShJbGS6pdwwudR1frPxR-7" value="int RequestID&lt;div&gt;string TypeOfProtection&lt;/div&gt;&lt;div&gt;string InformationAboutRequest&lt;/div&gt;&lt;div&gt;Person Applicant&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="590" y="850" width="170" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="ShJbGS6pdwwudR1frPxR-8" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="850" width="170" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="ShJbGS6pdwwudR1frPxR-11" value="Criminal complaint" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="590" y="565" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ShJbGS6pdwwudR1frPxR-13" value="Request for protection of rights" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="590" y="850" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ShJbGS6pdwwudR1frPxR-14" value="Lawsuit" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="320" y="680" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ShJbGS6pdwwudR1frPxR-15" value="Appeal" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="70" y="850" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ShJbGS6pdwwudR1frPxR-16" value="Divorce request" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="70" y="565" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ShJbGS6pdwwudR1frPxR-17" value="int LawsuitID&lt;div&gt;string claims&lt;/div&gt;&lt;div&gt;string facts&lt;/div&gt;&lt;div&gt;string requests&lt;/div&gt;&lt;div&gt;Person Plaintiff&lt;/div&gt;&lt;div&gt;Person defendant&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="320" y="710" width="170" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="ShJbGS6pdwwudR1frPxR-58" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="1" source="ShJbGS6pdwwudR1frPxR-19" target="ShJbGS6pdwwudR1frPxR-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ShJbGS6pdwwudR1frPxR-19" value="int AppealID&lt;div&gt;string ReasonForAppeal&lt;/div&gt;&lt;div&gt;string AppealRequests&lt;/div&gt;&lt;div&gt;Person Appellant&lt;/div&gt;&lt;div&gt;Person Appellee&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="70" y="880" width="170" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="ShJbGS6pdwwudR1frPxR-59" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="1" source="ShJbGS6pdwwudR1frPxR-20" target="ShJbGS6pdwwudR1frPxR-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ShJbGS6pdwwudR1frPxR-20" value="int RequestID&lt;div&gt;string InfoAboutCouple&lt;/div&gt;&lt;div&gt;string Reasons&lt;/div&gt;&lt;div&gt;Person Petitioner&lt;/div&gt;&lt;div&gt;Person Spouse&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="70" y="595" width="170" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="ShJbGS6pdwwudR1frPxR-52" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.25;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="1" source="ShJbGS6pdwwudR1frPxR-23" target="ShJbGS6pdwwudR1frPxR-37">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ShJbGS6pdwwudR1frPxR-23" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="590" y="30" width="170" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="ShJbGS6pdwwudR1frPxR-24" value="Prosecutor" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="590" y="30" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ShJbGS6pdwwudR1frPxR-48" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="1" source="ShJbGS6pdwwudR1frPxR-26" target="ShJbGS6pdwwudR1frPxR-37">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ShJbGS6pdwwudR1frPxR-26" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="20" width="170" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="ShJbGS6pdwwudR1frPxR-27" value="Judge" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="20" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ShJbGS6pdwwudR1frPxR-56" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="ShJbGS6pdwwudR1frPxR-32" target="ShJbGS6pdwwudR1frPxR-36">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ShJbGS6pdwwudR1frPxR-32" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="290" y="30" width="170" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="ShJbGS6pdwwudR1frPxR-33" value="Witness" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="290" y="30" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ShJbGS6pdwwudR1frPxR-35" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="310" y="330" width="170" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="ShJbGS6pdwwudR1frPxR-55" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="ShJbGS6pdwwudR1frPxR-36" target="ShJbGS6pdwwudR1frPxR-32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ShJbGS6pdwwudR1frPxR-36" value="Person" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="310" y="330" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ShJbGS6pdwwudR1frPxR-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.75;exitDx=0;exitDy=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="1" source="ShJbGS6pdwwudR1frPxR-37" target="ShJbGS6pdwwudR1frPxR-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ShJbGS6pdwwudR1frPxR-47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.75;exitDx=0;exitDy=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="1" source="ShJbGS6pdwwudR1frPxR-37" target="ShJbGS6pdwwudR1frPxR-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ShJbGS6pdwwudR1frPxR-50" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="1" source="ShJbGS6pdwwudR1frPxR-37" target="ShJbGS6pdwwudR1frPxR-23">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="480" y="510" />
+              <mxPoint x="535" y="510" />
+              <mxPoint x="535" y="87" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ShJbGS6pdwwudR1frPxR-37" value="int ID&lt;div&gt;string Name&lt;/div&gt;&lt;div&gt;string Surename&lt;/div&gt;&lt;div&gt;string Adress&lt;/div&gt;&lt;div&gt;date DateOfBirth&lt;/div&gt;&lt;div&gt;int phoneNumber&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="310" y="360" width="170" height="200" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
