@@ -135,17 +135,17 @@ func (h *Courthandler) NewCase(w http.ResponseWriter, r *http.Request) {
 }
 func (h *Courthandler) GetAllCases(w http.ResponseWriter, r *http.Request) {
 
-	res := ValidateJwt(r, h.repo)
-	if res == nil {
-		err := errors.New("user doesnt exist")
-		http.Error(w, err.Error(), http.StatusForbidden)
-		return
-	}
-	if res.Role != "Operator" {
-		err := errors.New("role error")
-		http.Error(w, err.Error(), http.StatusForbidden)
-		return
-	}
+	//res := ValidateJwt(r, h.repo)
+	//if res == nil {
+	//	err := errors.New("user doesnt exist")
+	//	http.Error(w, err.Error(), http.StatusForbidden)
+	//	return
+	//}
+	//if res.Role != "Operator" {
+	//	err := errors.New("role error")
+	//	http.Error(w, err.Error(), http.StatusForbidden)
+	//	return
+	//}
 	response, err := h.repo.GetAllCases()
 	if err != nil {
 		log.Printf("Operation Failed: %v\n", err)
@@ -161,17 +161,17 @@ func (h *Courthandler) GetAllCases(w http.ResponseWriter, r *http.Request) {
 }
 func (h *Courthandler) GetallRequests(w http.ResponseWriter, r *http.Request) {
 
-	res := ValidateJwt(r, h.repo)
-	if res == nil {
-		err := errors.New("user doesnt exist")
-		http.Error(w, err.Error(), http.StatusForbidden)
-		return
-	}
-	if res.Role != "Operator" {
-		err := errors.New("role error")
-		http.Error(w, err.Error(), http.StatusForbidden)
-		return
-	}
+	//res := ValidateJwt(r, h.repo)
+	//if res == nil {
+	//	err := errors.New("user doesnt exist")
+	//	http.Error(w, err.Error(), http.StatusForbidden)
+	//	return
+	//}
+	//if res.Role != "Operator" {
+	//	err := errors.New("role error")
+	//	http.Error(w, err.Error(), http.StatusForbidden)
+	//	return
+	//}
 	response, err := h.repo.GetAllRequest()
 	if err != nil {
 		log.Printf("Operation Failed: %v\n", err)
@@ -322,12 +322,12 @@ func (h *Courthandler) GetRequest(w http.ResponseWriter, r *http.Request) {
 		http.Error(w, err.Error(), http.StatusBadRequest)
 		return
 	}
-	res := ValidateJwt(r, h.repo)
-	if res == nil {
-		err := errors.New("user doesnt exist")
-		http.Error(w, err.Error(), http.StatusForbidden)
-		return
-	}
+	//res := ValidateJwt(r, h.repo)
+	//if res == nil {
+	//	err := errors.New("user doesnt exist")
+	//	http.Error(w, err.Error(), http.StatusForbidden)
+	//	return
+	//}
 	respon, err := h.repo.GetRequest(rt.Uuid)
 	if err != nil {
 		log.Printf("Operation failed: %v\n", err)
