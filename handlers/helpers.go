@@ -85,11 +85,11 @@ func DecodeBodyUser(r io.Reader) (*Models.User, error) {
 	}
 	return &rt, nil
 }
-func VehicleCausing(r io.Reader) (*Models.VehicleCausing, error) {
+func Case(r io.Reader) (*Models.Case, error) {
 	dec := json.NewDecoder(r)
 	dec.DisallowUnknownFields()
 
-	var rt Models.VehicleCausing
+	var rt Models.Case
 	if err := json.Unmarshal(StreamToByte(r), &rt); err != nil {
 		return nil, err
 	}

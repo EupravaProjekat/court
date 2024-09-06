@@ -36,7 +36,7 @@ func main() {
 	repo.Ping()
 
 	//Initialize the handler and inject said logger
-	hh := handlers.NewBorderhendler(l, repo)
+	hh := handlers.NewCourthandler(l, repo)
 
 	router := mux.NewRouter()
 	router.StrictSlash(true)
@@ -47,8 +47,8 @@ func main() {
 	router.HandleFunc("/getrequest/{id}", hh.GetRequest).Methods("GET")
 	router.HandleFunc("/adddata", hh.NewUser).Methods("POST")
 	router.HandleFunc("/getallrequests", hh.GetallRequests).Methods("GET")
-	router.HandleFunc("/getallcausings", hh.GetallCausings).Methods("GET")
-	router.HandleFunc("/newcausing", hh.NewCausing).Methods("POST")
+	router.HandleFunc("/getallcausings", hh.GetAllCases).Methods("GET")
+	router.HandleFunc("/newcase", hh.NewCase).Methods("POST")
 
 	headersOk := habb.AllowedHeaders([]string{"Content-Type", "jwt", "Authorization"})
 	originsOk := habb.AllowedOrigins([]string{"http://localhost:4200"}) // Replace with your frontend origin

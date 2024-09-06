@@ -147,13 +147,13 @@ func (ar *Repo) GetAllRequest() ([]*Models.Request, error) {
 
 	return allRequests, nil
 }
-func (ar *Repo) GetAllCausings() ([]*Models.VehicleCausing, error) {
+func (ar *Repo) GetAllCases() ([]*Models.Case, error) {
 	ctx, cancel := context.WithTimeout(context.Background(), 5*time.Second)
 	defer cancel()
 
-	var allRequests []*Models.VehicleCausing
+	var allRequests []*Models.Case
 
-	Collection := ar.getCollectionVehicles()
+	Collection := ar.getCollectionCases()
 	cursor, err := Collection.Find(ctx, bson.M{})
 	if err != nil {
 		log.Fatal(err)
@@ -162,7 +162,7 @@ func (ar *Repo) GetAllCausings() ([]*Models.VehicleCausing, error) {
 
 	// Iterate over the cursor
 	for cursor.Next(ctx) {
-		var request Models.VehicleCausing
+		var request Models.Case
 		err := cursor.Decode(&request)
 		if err != nil {
 			log.Fatal(err)
@@ -203,11 +203,11 @@ func (ar *Repo) NewUser(Request *Models.User) error {
 	ar.logger.Printf("Documents ID: %v\n", result.InsertedID)
 	return nil
 }
-func (ar *Repo) NewCausing(Request *Models.VehicleCausing) error {
+func (ar *Repo) NewCase(Request *Models.Case) error {
 	ctx, cancel := context.WithTimeout(context.Background(), 5*time.Second)
 	defer cancel()
 
-	accCollection := ar.getCollectionVehicles()
+	accCollection := ar.getCollectionCases()
 
 	result, err := accCollection.InsertOne(ctx, &Request)
 	if err != nil {
@@ -272,12 +272,12 @@ func (ar *Repo) DeleteByEmail(id string) error {
 }
 
 func (ar *Repo) getCollection() *mongo.Collection {
-	accommodationDatabase := ar.cli.Database("mongoBorder")
-	accommodationCollection := accommodationDatabase.Collection("border")
+	accommodationDatabase := ar.cli.Database("mongoCourt")
+	accommodationCollection := accommodationDatabase.Collection("court")
 	return accommodationCollection
 }
-func (ar *Repo) getCollectionVehicles() *mongo.Collection {
-	accommodationDatabase := ar.cli.Database("mongoBorder")
-	accommodationCollection := accommodationDatabase.Collection("border-vehicles")
+func (ar *Repo) getCollectionCases() *mongo.Collection {
+	accommodationDatabase := ar.cli.Database("mongoCourt")
+	accommodationCollection := accommodationDatabase.Collection("court-cases")
 	return accommodationCollection
 }
